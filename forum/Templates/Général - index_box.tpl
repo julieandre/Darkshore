@@ -1,7 +1,7 @@
 <!----------------------------------------------->
 <!-- CATEGORIES -------------->
 
-<div class="categories">
+<div class="contour categories">
 
 <!-- Conteneur d'une catégorie -->
 <!-- BEGIN catrow -->

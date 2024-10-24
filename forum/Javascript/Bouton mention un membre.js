@@ -16,6 +16,7 @@
  */
 $(function() {
   var version = 4;
+  var custom = true;
  
   if (/mode=reply/.test(window.location.search) && my_getcookie('fa_mention')) {
     document.post.message.value += '@"' + my_getcookie('fa_mention') + '" ';
@@ -36,13 +37,17 @@ $(function() {
         window.location.href = '/post?t=' + window.location.pathname.replace(/\/t(\d+)-.*/,'$1') + '&mode=reply';
       }
     };
- 
-    if (l) {
-      c = document.createElement('LI');
-      c.appendChild(b);
+
+    if(custom) {
+      $('.post_actions')[i].append(b);
+    } else {
+      if (l) {
+        c = document.createElement('LI');
+        c.appendChild(b);
+      }
+  
+      a[i].insertBefore(l ? c : b, a[i].firstChild);
     }
- 
-    a[i].insertBefore(l ? c : b, a[i].firstChild);
   }
  
   $(function(){

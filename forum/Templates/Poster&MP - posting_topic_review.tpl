@@ -1,5 +1,6 @@
-<div class="wrapped">
 
+<br/>
+<div class="container post_history">
     <!-- Titre "revue du sujet" -->
     <!-- BEGIN switch_inline_mode -->
     <div class="h3">{L_TOPIC_REVIEW}</div>
@@ -9,12 +10,12 @@
     <!-- BEGIN postrow -->
     <!-- BEGIN displayed -->
     <a name="{postrow.displayed.POST_ID}"></a>
-    <div class="panel {postrow.displayed.displayed.ROW_CLASS}">
+    <div class="{postrow.displayed.displayed.ROW_CLASS}">
 
         <!-- Contenu -->
         <div class="postbody">
             <!-- Sujet par - Auteur - le - date -->
-            <span> {postrow.displayed.L_TOPIC_BY} {postrow.displayed.POSTER_NAME} {postrow.displayed.L_TOPIC_ON} {postrow.displayed.POST_DATE}</span>
+            <span class="postreview_detail"> {postrow.displayed.L_TOPIC_BY} {postrow.displayed.POSTER_NAME} {postrow.displayed.L_TOPIC_ON} {postrow.displayed.POST_DATE}</span>
 
             <!-- Message -->
             <div class="content">{postrow.displayed.MESSAGE}</div>
@@ -31,8 +32,5 @@
     <!-- END postrow -->
     <!-- Fin de l'affichage -->
 
-
 </div>
-<br />
-
             

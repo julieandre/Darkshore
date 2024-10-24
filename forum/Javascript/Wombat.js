@@ -116,6 +116,14 @@ var Wombat = (function() {
             event.preventDefault();
             this.load('https://glytest.forumactif.com/h1-map').then(() => this.open("map"));
         });
+
+        document.querySelectorAll('.wombat-mp a').forEach(link => {
+            link.addEventListener("click", event => {
+                event.stopPropagation();
+                event.preventDefault();
+                this.load(link.href).then(() => this.open("contact"));
+            });
+        });
     };
 
     // Méthode pour charger les données asynchrones

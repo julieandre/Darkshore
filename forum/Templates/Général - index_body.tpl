@@ -19,8 +19,6 @@
 
             <!-- Bouton connexion -->
             {S_HIDDEN_FIELDS}<input class="mainoption button1" type="submit" name="login" value="{L_LOGIN}" />
-
-
         </div>
     </form>
 </div>
@@ -45,7 +43,7 @@
 <!-- END message_admin_index -->
 
 <div id="toplinks"></div>
-<div id="pa">
+<div id="pa" class="contour">
     <div id="season">test</div>
 
     <div class="pa-body">
@@ -87,6 +85,8 @@
                     </div>
                 </div>
             </div>
+
+            <div id="infos"></div>
         </div>
         <div class="pa-middle">
             <div id="contexte-container">
@@ -95,30 +95,28 @@
             </div>
 
             <div class="pa-title">contexte</div>
-
-            <div id="playlist"></div>
-        </div>
-        <div class="pa-right">
-        
-            <div id="scenarii">
-            
-            </div>
-            
-            <div class="pa-title">most wanted</div>
             
             <div id="pa-commu">
                 <a id="pa-discord" target="_blank" href="#">
                     COMMUNAUTÉ DISCORD <img src="https://zupimages.net/up/24/38/k37s.gif" />
                 </a>
-                <br />
+                
                 <select id="partenaires" onchange="location = this.value">
                     <option selected="select_partenaire">NOS TOP PARTENAIRES</option>
                 </select>
             </div>
+
+            <div id="playlist"></div>
+        </div>
+        <div class="pa-right">
         
-            <div id="infos">
+            <div id="scenarii"></div>
             
-            </div>
+            <div class="pa-title">wanted</div>
+        
+            <div id="last-messages"></div>
+            
+            <div class="pa-title">derniers messages</div>
         </div>
     </div>
 </div>
@@ -144,7 +142,7 @@
 <!-- QUI EST EN LIGNE -------------->
 
 <!-- BEGIN disable_viewonline -->
-<div class="qeel-body">
+<div class="contour qeel-body">
     <div class="qeel-cat-title">
         <h2>the one above the other</h2>
     </div>

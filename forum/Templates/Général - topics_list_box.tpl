@@ -28,6 +28,11 @@
     <div class="topicslist_infos" {topics_list_box.row.ICON}>
         <div class="topicslist_infos_top">
             <div class="topicslist_infos_title">
+                <!-- Icon vous avez posté dans ce sujet -->
+                <div class="topicslist-youposthere">
+                    {topics_list_box.row.PARTICIPATE_POST_IMG}
+                </div>
+                
                 <!-- Titre du sujet -->
                 <a class="topictitle" href="{topics_list_box.row.U_VIEW_TOPIC}">{topics_list_box.row.TOPIC_TITLE}</a>
             </div>
@@ -65,7 +70,7 @@
                 <!-- Statistiques -->
                 <div class="topicslist-stats">
                     <!-- Nombres // Indication "messages" — Nombres // Indication "vues" -->
-                    {topics_list_box.row.REPLIES} {L_REPLIES} — {topics_list_box.row.VIEWS} {L_VIEWS}
+                    {topics_list_box.row.REPLIES} {L_REPLIES} ▬ {topics_list_box.row.VIEWS} {L_VIEWS}
                 </div>
             </div>
         </div>
@@ -73,11 +78,6 @@
 
     <!-- Dernier message -->
     <div class="topicslist-lastpost lastpost">
-        <!-- Icon vous avez posté dans ce sujet -->
-        <div class="topicslist-youposthere">
-            {topics_list_box.row.PARTICIPATE_POST_IMG}
-        </div>
-
         <div class="topicslist-lastpost-infos">
             <!-- Date du dernier message -->
             {topics_list_box.row.LAST_POST_TIME}

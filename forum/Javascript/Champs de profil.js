@@ -25,8 +25,13 @@
         moves : [ 
             { 
                 move: ['faceclaim'], //-- cibler un champ
-                postMoveTo: '.post_avatar_hidden', //-- le déplacer (dans les messages)
+                postMoveTo: '.post_avatar_hidden_fields', //-- le déplacer (dans les messages)
                 profileMoveTo: '#user_fc', //-- le déplacer (dans les profils)
+            },
+            { 
+                move: ['pseudo'], //-- cibler un champ
+                postMoveTo: '.post_footer_pseudo', //-- le déplacer (dans les messages)
+                profileMoveTo: '.profile-bottom', //-- le déplacer (dans les profils)
             },
             { 
                 move: ['image-texte-profil'], //-- cibler un champ
@@ -34,13 +39,18 @@
                 profileMoveTo: '#profile-freezone', //-- le déplacer (dans les profils)
             },
             { 
-                move: ['autres-visages'], //-- cibler un champ
+                move: ['autres-visages', 'date-de-naissance', 'credits'], //-- cibler un champ
                 postMoveTo: '.post_irlzone', //-- le déplacer (dans les messages)
                 profileMoveTo: '#profile-irlzone', //-- le déplacer (dans les profils)
             },
             { 
-                move: ['cicatrices', 'anima', 'en-ville-depuis', 'date-de-naissance', 'credits'], //-- cibler un champ
-                postMoveTo: '.post_avatar_hidden', //-- le déplacer (dans les messages)
+                move: ['contact'], //-- cibler un champ
+                postMoveTo: '.post_irlzone', //-- le déplacer (dans les messages)
+                profileMoveTo: '.profile-bottom', //-- le déplacer (dans les profils)
+            },
+            { 
+                move: ['cicatrices', 'anima', 'en-ville-depuis'], //-- cibler un champ
+                postMoveTo: '.post_avatar_hidden_fields', //-- le déplacer (dans les messages)
                 profileMoveTo: '.profile-bottom', //-- le déplacer (dans les profils)
             } ]
     },
@@ -68,13 +78,14 @@
         },
 
         main = _ => {
-            document.querySelectorAll('.user_field').forEach(p => {
+            document.querySelectorAll('.user_field:not(.moved)').forEach(p => {
                 const labelcontainer = p.querySelector('.field_label'),
                     label = labelcontainer.querySelector('.label'),
                     name = label.textContent.replace(/ *: *$/, ''),
                     slug = slugify(name);
 
                 p.classList.add('field-' + slug);
+                p.classList.add('moved');
 
                 settings.moves.forEach(moveElem => {
                     if (moveElem.move.includes(slug)) {
@@ -89,12 +100,13 @@
                 }
             });
 
-            document.querySelectorAll('.profile_infos .profile_field').forEach(p => {
+            document.querySelectorAll('.profile_infos .profile_field:not(.moved)').forEach(p => {
                 const label = p.querySelector('.field_label'),
                     name = label.textContent.replace(/ *: *$/, ''),
                     slug = slugify(name);
 
                 p.classList.add('field-' + slug);
+                p.classList.add('moved');
 
                 settings.moves.forEach(moveElem => {
                     if (moveElem.move.includes(slug)) {

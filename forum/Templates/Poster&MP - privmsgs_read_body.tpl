@@ -1,84 +1,98 @@
-<br />
-
 <!----------------------------------------------->
 <!-- MENU DE LA BOÎTE DE RECEPTION -------------->
 
-<ul id="privmsgs-menu">
-    <!-- Boîte de reception (image / lien) -->
-    <li>{INBOX_IMG} {INBOX}</li>
-    <!-- Messages envoyés (image / lien) -->
-    <li>{SENTBOX_IMG} {SENTBOX}</li>
-    <!-- Boîte d'envoi (image / lien) -->
-    <li>{OUTBOX_IMG} {OUTBOX}</li>
-    <!-- Archives (image / lien) -->
-    <li>{SAVEBOX_IMG} {SAVEBOX}</li>
-</ul>
+<div id="tabs" class="private_msg">
+    <ul>
+        <!-- Boîte de reception (image / lien) -->
+        <li>{INBOX}</li>
+        <!-- Messages envoyés (image / lien) -->
+        <li>{SENTBOX}</li>
+        <!-- Boîte d'envoi (image / lien) -->
+        <li>{OUTBOX}</li>
+        <!-- Archives (image / lien) -->
+        <li>{SAVEBOX}</li>
+    </ul>
+</div>
 
-<!----------------------------------------------->
-<!-- BARRE DE GESTION -------------->
-<div class="links_bar">
-      
-       <!-- Bouton: répondre -->
-       <!-- BEGIN switch_post_reply -->
-       <a href="{REPLY_PM_URL}" rel="nofollow" title="{REPLY_PM_IMG}" class="replypm_button buttons">{REPLY_PM_IMG}</a>
-        <!-- END switch_post_reply -->
-    </div>
+<div class="container mp">
+    <!-- Tire du message -->
+    <div class="cate_title"><h2>{POST_SUBJECT}</h2></div>
 
+    <form action="{S_PRIVMSGS_ACTION}" method="post">
 
-
-<form action="{S_PRIVMSGS_ACTION}" method="post">
-
-   <!----------------------------------------------->
+    <!----------------------------------------------->
     <!-- AFFICHAGE DU MESSAGE -------------->
-    <div class="container">
-
-        <!-- Tire du message -->
-        <h1 class="page-title">{POST_SUBJECT}</h1>
 
         <!-- Conteneur du message -->
-        <div class="message">
-
-            <!-- Conteneur des informations du message -->
-            <div class="message_infos">
-
-                <!-- De XX à XX, date -->
-                <span>{L_FROM} {MESSAGE_FROM} {L_TO} {MESSAGE_TO}, {POST_DATE}</span>
-
-                <!-- Boutons d'édition -->
-                <ul class="mp-icons">
-                    <!-- BEGIN switch_quote -->
-                    <li>{QUOTE_PM_IMG}</li>
-                    <!-- END switch_quote -->
-                    <li>{EDIT_PM_IMG}</li>
-                </ul>
-
-            </div>
+        <div class="message post_content">
 
             <!-- Profil de l'expéditeur -->
-            <div class="message_profil">
-
-                <!-- avatar -->
-                {AVATAR_FROM}<br /><br />
+            <div class="message_profil post_profile">
 
                 <!-- pseudo -->
-                {MESSAGE_FROM}
+                <span class="post_pseudo">
+                    <a href="#">{MESSAGE_FROM}</a>
+                </span>
+
+                <!-- avatar -->
+                <div class="post_profile_cadre">
+                    <div class="post_avatar">
+                        <a href="#">
+                            {AVATAR_FROM}
+                        </a>
+                    </div>
+                </div>
 
                 <!-- Lien-image de contact -->
                 <!-- BEGIN switch_user_contact -->
-                <br />
-                {PROFILE_IMG} {WWW_IMG}
+                {PROFILE_IMG}
                 <!-- END switch_user_contact -->
             </div>
 
-            <!-- contenu du MP -->
-            <div class="message_content postbody content">
-                {MESSAGE}
+            <script type="text/javascript">
+                const messageLink = $('.message_profil > a').attr('href');
+                if (messageLink) {
+                    $('.post_avatar a').attr('href', messageLink);
+                    $('.post_pseudo a').attr('href', messageLink);
+                }
+            </script>
+
+            <div class="message_text post_text">
+                <!-- Conteneur des informations du message -->
+                <div class="message_infos post_details">
+                    <!-- De XX à XX -->
+                    <span>envoyé à {MESSAGE_TO}</span>
+
+                    <!-- Boutons d'édition -->
+                    <ul class="mp-icons profile-icons">
+                        <!-- BEGIN switch_quote -->
+                        <li>{QUOTE_PM_IMG}</li>
+                        <!-- END switch_quote -->
+                        <li>{EDIT_PM_IMG}</li>
+                    </ul>
+
+                    <span class="post_date">▬&nbsp;<time>{POST_DATE}</time>&nbsp;▬</span>
+                </div>
+
+                <!-- contenu du MP -->
+                <div class="message_content post_message postbody content">
+                    {MESSAGE}
+                </div>
             </div>
 
         </div>
         <!-- Fin du conteneur message -->
 
-      
+        <!----------------------------------------------->
+        <!-- BARRE DE GESTION -------------->
+        <div class="message_rep">
+            <!-- Bouton: répondre -->
+            <!-- BEGIN switch_post_reply -->
+            <a href="{REPLY_PM_URL}" rel="nofollow" title="{REPLY_PM_IMG}" class="replypm_button buttons">{REPLY_PM_IMG}</a>
+            <!-- END switch_post_reply -->
+        </div>
+
+    
         <!----------------------------------------------->
         <!-- BOUTONS DE GESTION -------------->
         <br/>
@@ -95,10 +109,10 @@
             <input class="button2" type="submit" name="delete" value="{L_DELETE_MSG}" />
         </fieldset>
 
-    </div>
     <!-- Fin de l'affichage du message -->
 
-</form>
+    </form>
+</div>
 
 <!----------------------------------------------->
 <!-- HISTORIQUE DES MESSAGES -------------->
@@ -107,14 +121,6 @@
 <!-- BEGIN switch_review_box -->
 {TOPIC_REVIEW_BOX}
 <!-- END switch_review_box -->
-
-
-
-
-<!-- Sauter vers un forum -->
-{JUMPBOX}
-
-
 
 <!-- BEGIN switch_image_resize -->
 <script type="text/javascript">

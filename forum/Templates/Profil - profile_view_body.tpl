@@ -2,7 +2,7 @@
 <!-- ACTIVATE SIMPLE PROFILE: Users & Groups › Profiles › General options › Activate advanced profile: no -->
 
 <br/>
-<div class="user_profile">
+<div class="user_profile contour">
     <div class="profile" id="wombat">
 
         <!-- Username -->

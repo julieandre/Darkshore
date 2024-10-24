@@ -110,4 +110,12 @@ function pageaccueil() {
 
         $("#scenarii").append(scena);
     });
+
+    $.get('https://glytest.forumactif.com/embed', function(data) {
+        if($(data).find('.mod-recent-row').html()) {
+            $('#last-messages').html($(data).find('.mod-recent-row').html());
+        } else {
+            $('#last-messages').html($(data).find('.marquee').html());
+        }
+	});
 }

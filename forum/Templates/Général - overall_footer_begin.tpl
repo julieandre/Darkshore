@@ -30,21 +30,22 @@
 
   	<!-- Barre de liens en bas de page -->
 	<div class="page-footer-links">
+	
+		<!-- BEGIN switch_user_logged_in -->
 		<div class="left">
-			<!-- BEGIN switch_user_logged_in -->
 			<!-- Marquer les forums comme lus -->
 			<a id="mark_read" href="{U_MARK_READ}" accesskey="m">Tout marquer comme lu</a>
-			<!-- END switch_user_logged_in -->
 		</div>
+		<!-- END switch_user_logged_in -->
 		
+		<!-- BEGIN switch_on_index -->
+		<!-- Supprimer des cookies du forum -->
+		<!-- BEGIN switch_delete_cookies -->
 		<div class="middle">
-			<!-- BEGIN switch_on_index -->
-			<!-- Supprimer des cookies du forum -->
-			<!-- BEGIN switch_delete_cookies -->
 			<a href="{switch_on_index.switch_delete_cookies.U_DELETE_COOKIES}" rel="nofollow">{switch_on_index.switch_delete_cookies.L_DELETE_COOKIES}</a>
-			<!-- END switch_delete_cookies -->
-			<!-- END switch_on_index -->
 		</div>
+		<!-- END switch_delete_cookies -->
+		<!-- END switch_on_index -->
 		
 		<div class="right">
 			<!-- Lien "nouveaux messages" -->
@@ -52,7 +53,7 @@
 		</div>
 	</div>
 		
-    <div class="credits">
+    <div class="contour credits">
 		Forum ouvert depuis le <strong>02.10.2019</strong> sous l'entière responsabilité de ses fondatrices <strong>chat.noir</strong> et <strong>.tetra</strong>.
 		<br />La plateforme est optimisée pour <strong>Google Chrome</strong>. 
 		Voir <a href="https://darkshore-detroit.forumactif.com/t2484-livre-d-or-credits#65227">les crédits</a> du forum.
