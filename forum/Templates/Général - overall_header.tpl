@@ -5,8 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{S_CONTENT_DIRECTION}" id="min-width" lang="{L_LANG_HTML}" xml:lang="{L_LANG_HTML}" {NAMESPACE_FB_LIKE} {NAMESPACE_FB} {NAMESPACE_BBCODE}>
 
 <head>
-    <link href="https://dl.dropbox.com/scl/fi/xm4wycu2r05i48924kglo/main.css?rlkey=rswzr5pokkxq06z8f7pku3uzq&dl=0&raw=1" rel="stylesheet">
-    <link href="https://dl.dropbox.com/scl/fi/gw91tuxccq552624tdw7w/CSS_only.css?rlkey=yts6u36j53eqnq116v4oz0sws&dl=0&raw=1" rel="stylesheet">
+    <link href="https://dl.dropbox.com/scl/fi/41n22jo0s1swp0gev1y4r/main.css?rlkey=bahu5cvv5rh5ag18ksu4nrzyl&dl=0&raw=1" rel="stylesheet">
+    <link href="https://dl.dropbox.com/scl/fi/oc2nhe7r5p8i7mxxf04p3/CSS_only.css?rlkey=h5msprj7kyt4nqwgdwu61exl3&dl=0&raw=1" rel="stylesheet">
     <!--   INSTALLATION DE NOUVELLE POLICE D'ECRITURE -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
