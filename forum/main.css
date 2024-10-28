@@ -222,6 +222,17 @@ body {
     margin: 10px auto;
 }
 
+/* AUDIO ---*/
+
+audio {
+    height: 30px;
+    width: 240px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: var(--shadow);
+}
+
 /* CADRE ---*/
 
 #page-cadre-right,
@@ -4873,11 +4884,252 @@ fiche_histoire {
     overflow: auto;
 }
 
-audio {
-    height: 30px;
-    width: 240px;
+/*** ------------------------------- ***/
+/*** DARGET ------------------------ ***/
+
+.ds-cible {
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    text-align: justify;
+    background: #0f0f0f
 }
 
-audio::-webkit-media-controls-panel {
-    background-color: var(--shadow);
+.ds-comcib {
+    font-family: 'arial';
+    font-size: 11px;
+    line-height: 1;
+    color: #fff;
+    padding: 17px 12px 10px 15px
+}
+
+.ds-pseu {
+    font-family: 'oswald';
+    font-size: 11px;
+    color: #8b8b8b;
+    text-transform: uppercase;
+    padding-right: 20px
+}
+
+.ds-imgcib {
+    height: 30px;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 5px;
+    padding-left: 12px
+}
+
+.ds-convo {
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    text-align: justify;
+    background: #0f0f0f
+}
+
+.ds-comconv {
+    font-family: 'Arial';
+    font-size: 11px;
+    line-height: 1;
+    color: #fff;
+    padding: 17px 15px
+}
+
+.ds-imgconv {
+    width: 30px;
+    height: 30px;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+    padding-left: 15px
+}
+
+/*** ------------------------------- ***/
+/*** ANCIENNES FICHES -------------- ***/
+
+.box1 {
+    background: #EBEBEB;
+    height: 50px;
+    padding: 10px;
+    text-align: justify;
+    overflow: auto
+}
+
+.box2 {
+    background: #EBEBEB;
+    height: auto;
+    padding: 10px
+}
+
+.titre2 {
+    background-color: #1f1f1f;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    height: 25px;
+    letter-spacing: 3px;
+    line-height: 14px;
+    padding-top: 10px
+}
+
+.imgfiche2 {
+    width: 460px;
+    text-align: center
+}
+
+.fondtitrefiche {
+    height: 20px;
+    background-color: #1f1f1f;
+    text-align: left;
+    overflow: hidden
+}
+
+.infofiche2 {
+    text-align: justify;
+    overflow: auto;
+    position: relative;
+    height: 250px;
+    align: middle;
+    width: 470px;
+    border-radius: 5px;
+    opacity: 0;
+    text-align: justify;
+    transform: all;
+    -moz-transform: all;
+    -webkit-transform: all;
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s
+}
+
+.infofiche2:hover {
+    height: 250px;
+    background: #EBEBEB;
+    opacity: .8;
+    transform: all;
+    -moz-transform: all;
+    -webkit-transform: all;
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s
+}
+
+.cadre1 {
+    background-color: #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    border-left: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    width: 460px;
+    font-size: 10px;
+    text-align: justify;
+    padding: 5px;
+    line-height: 18px;
+}
+
+.titus {
+    background-color: #1F1F1F;
+    width: 203px;
+    font-size: 10px;
+    color: #FFF;
+    text-align: center;
+    padding: 2px;
+    margin-left: -80px;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transition: 1s
+}
+
+.titus:hover {
+    transition: 1s;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+
+royal {
+    font-family: Oswald;
+    font-size: 10px;
+    text-transform: uppercase
+}
+
+.ava {
+    height: 200px
+}
+
+.infofi {
+    background-color: #EBEBEB;
+    color: #1F1F1F;
+    width: 250px;
+    margin-left: -80px;
+    padding: 5px;
+    text-align: justify
+}
+
+.espace {
+    margin-right: 5px
+}
+
+.corpus {
+    overflow: auto;
+    height: 196px
+}
+
+.caract {
+    background-color: #EBEBEB;
+    color: #1F1F1F;
+    width: 395px;
+    margin-left: 5px;
+    padding: 1px;
+    text-align: justify
+}
+
+.online {
+    background-color: #EBEBEB;
+    color: #1F1F1F;
+    width: 395px;
+    margin-left: 5px;
+    padding: 5px;
+    text-align: justify
+}
+
+.titus2 {
+    background-color: #1F1F1F;
+    width: 450px;
+    font-size: 10px;
+    color: #FFF;
+    text-align: center;
+    padding: 2px;
+    margin-left: -80px;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: 1s
+}
+
+.titus2:hover {
+    transition: 1s;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+
+.histoire {
+    background-color: #EBEBEB;
+    color: #1F1F1F;
+    width: 395px;
+    margin-left: 0;
+    margin-right: -125px;
+    padding: 5px;
+    text-align: justify
+}
+
+.cadre2 {
+    overflow: auto;
+    height: 443px
 }
