@@ -116,7 +116,7 @@ var Wombat = (function() {
         document.querySelector('#map').addEventListener("click", event => {
             event.stopPropagation();
             event.preventDefault();
-            this.load('https://glytest.forumactif.com/h1-map').then(() => this.open("map"));
+            this.load('/h1-map-interactive').then(() => this.open("map"));
         });
 
         document.querySelectorAll('.wombat-mp a').forEach(link => {
