@@ -5,7 +5,6 @@
 
 // Permet de déplacer plus facilement les icons de messages (si activés), comme "résolus", "trigger warning", ...
 
-
 $(function () {
     $('.topicslist_row').find('.topicslist_infos[style*="background-image"]').each(function () {
         var a = $(this).css('background-image');

@@ -49,6 +49,5 @@ $.getScript('https://cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js', fun
         e.clearSelection();
       });
     }
- 
   });
 });

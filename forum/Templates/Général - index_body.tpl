@@ -101,8 +101,8 @@
                     COMMUNAUTÉ DISCORD <img src="https://zupimages.net/up/24/38/k37s.gif" />
                 </a>
                 
-                <select id="partenaires" onchange="location = this.value">
-                    <option selected="select_partenaire">NOS TOP PARTENAIRES</option>
+                <select id="partenaires" onchange="window.open(this.value, '_blank')">
+                    <option selected="select_partenaire" disabled>NOS TOP PARTENAIRES</option>
                 </select>
             </div>
 

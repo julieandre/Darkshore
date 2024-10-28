@@ -7,7 +7,6 @@ $(function () {
   try {
     $.get($('#newest_user a[href^=\'/u\']') [0].href, function (d) {
         (a = $('#user_avatar img', $(d))).length && $('#lastuser_avatar').html(a);
-        (fc = $('#field_id-11 .field_uneditable', $(d))).length && $('#lastuser_faceclaim').html("ft. " + fc.text())
     })
   } catch(e) {}
 });

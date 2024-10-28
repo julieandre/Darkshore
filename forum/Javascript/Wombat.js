@@ -1,5 +1,7 @@
 // PLACEMENT : Sur toutes les pages
 
+// Multiple types de fenêtres, by Glycorne
+
 var Wombat = (function() {
     "use strict";
 

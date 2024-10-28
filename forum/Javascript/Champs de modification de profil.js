@@ -28,7 +28,7 @@
                     
                     // Créer le div d'explication
                     const infoDiv = $('<div>', {
-                        text: "Attention, ce champ n'accepte pas le bbcode ni les sauts à la ligne. Il s'agit d'une mise en forme pour le confort de lecture et d'écriture de vos profils.",
+                        text: "Attention, ce champ n'accepte pas le bbcode et les sauts à la ligne ne sont pas sauvegardés.",
                         class: 'profil-rp-info-div'
                     });
 

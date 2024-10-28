@@ -1538,6 +1538,7 @@ a.mainmenu img {display: none}
     letter-spacing: 1px;
     font-size: var(--mini-size);
     text-transform: uppercase;
+    max-width: 180px;
 }
 
 #scenarii {

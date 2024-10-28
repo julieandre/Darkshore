@@ -1,3 +1,5 @@
+// PLACEMENT : sur l'index
+
 var pa = {
     "scenarii": [
         {
@@ -6,14 +8,14 @@ var pa = {
             "lien": "https://darkshore-detroit.forumactif.com/t3515-m-through-the-valley-family"
         },
         {
-            "img": "https://images2.imgbox.com/5a/ad/u08XiBYB_o.gif",
-            "description": "▬",
-            "lien": "#"
+            "img": "https://images2.imgbox.com/b6/41/i4aExqKK_o.png",
+            "description": "best friend<br />black crows",
+            "lien": "https://darkshore-detroit.forumactif.com/t4610-m-0-1-till-the-end"
         },
         {
-            "img": "https://images2.imgbox.com/5a/ad/u08XiBYB_o.gif",
-            "description": "▬",
-            "lien": "#"
+            "img": "https://images2.imgbox.com/62/d9/sCOm1fyE_o.png",
+            "description": "family - brother<br />lawyer",
+            "lien": "https://darkshore-detroit.forumactif.com/t5105-m-the-worst-stories-are-family-stories-family"
         },
         {
             "img": "https://images2.imgbox.com/5a/ad/u08XiBYB_o.gif",
@@ -35,6 +37,74 @@ var pa = {
         {
             "nom": "Ashes arise",
             "lien": "https://darkshore-detroit.forumactif.com/t1302-top-ashes-arise"
+        },
+        {
+            "nom": "ASHES OF A HOPELESS PLAYGROUND",
+            "lien": "https://darkshore-detroit.forumactif.com/t97-top-ashes-of-a-hopeless-playground"
+        },
+        {
+            "nom": "basique",
+            "lien": "https://darkshore-detroit.forumactif.com/t4579-top-basique"
+        },
+        {
+            "nom": "COUNT ON ME",
+            "lien": "https://darkshore-detroit.forumactif.com/t5319-top-count-on-me"
+        },
+        {
+            "nom": "DARK AS THE MIDNIGHT SUN",
+            "lien": "https://darkshore-detroit.forumactif.com/t5838-top-dark-as-the-midnight-sun"
+        },
+        {
+            "nom": "entre deux mondes",
+            "lien": "https://darkshore-detroit.forumactif.com/t5241-top-entre-deux-mondes"
+        },
+        {
+            "nom": "HALF GOD",
+            "lien": "https://darkshore-detroit.forumactif.com/t5065-top-half-god"
+        },
+        {
+            "nom": "la isla blanca",
+            "lien": "https://laislablanca.forumactif.com/"
+        },
+        {
+            "nom": "LA LIGUE DES GENTLEMEN EXTRAORDINAIRES",
+            "lien": "https://darkshore-detroit.forumactif.com/t111-top-la-ligue-des-gentlemen-extraordinaires"
+        },
+        {
+            "nom": "LIFE IS STRANGE",
+            "lien": "https://darkshore-detroit.forumactif.com/t5607-top-life-is-strange"
+        },
+        {
+            "nom": "PEACE OF MIND",
+            "lien": "https://darkshore-detroit.forumactif.com/t5698-top-peace-of-mind"
+        },
+        {
+            "nom": "revelio magicae",
+            "lien": "https://reveliomagicae.forumactif.com/"
+        },
+        {
+            "nom": "REWRITE THE STARS",
+            "lien": "https://darkshore-detroit.forumactif.com/t5415-top-rewrite-the-stars"
+        },
+        {
+            "nom": "SMALL TALKS",
+            "lien": "https://darkshore-detroit.forumactif.com/t5939-small-talks"
+        },
+        {
+            "nom": "Sur nos cendres",
+            "lien": "https://eyestoheaven.forumactif.com/"
+        },
+        {
+            "nom": "SWEET HOME CHICAGO",
+            "lien": "https://darkshore-detroit.forumactif.com/t5696-top-sweet-home-chicago"
+        },
+        {
+            "nom": "THE HEART'S MELODY",
+            "lien": "https://darkshore-detroit.forumactif.com/t5064-top-the-heart-s-melody"
+        },
+        {
+            "nom": "WHISTLEDOWN",
+            "lien": "https://darkshore-detroit.forumactif.com/t4511-top-whistledown"
         },
         {
             "nom": "Devenir partenaire",
@@ -111,7 +181,7 @@ function pageaccueil() {
         $("#scenarii").append(scena);
     });
 
-    $.get('https://glytest.forumactif.com/embed', function(data) {
+    $.get('/embed', function(data) {
         if($(data).find('.mod-recent-row').html()) {
             $('#last-messages').html($(data).find('.mod-recent-row').html());
         } else {

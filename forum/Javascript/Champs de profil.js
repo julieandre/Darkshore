@@ -6,6 +6,8 @@
 // Options, by Monomer
 // Possibilité de déplacer un champs dans un autre élément
 
+// Multiple options, by Glycorne
+
 !function () {
 
     const settings = {

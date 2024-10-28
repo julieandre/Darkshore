@@ -1,3 +1,5 @@
+// PLACEMENT : sur toutes les pages
+
 !window.FAM && (function() {
   'use strict';
   

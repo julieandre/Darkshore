@@ -6,7 +6,6 @@
 // [ENGLIGH] by Ange tuteur
 // https://help.forumotion.com/t140358-make-the-mentioning-system-easier-to-use
 
-
 /* FORUM VERSIONS
  * 0 = PHPBB2
  * 1 = PHPBB3
