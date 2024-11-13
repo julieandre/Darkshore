@@ -8,9 +8,9 @@
     
     // BOUTON DE CONTACT 
     $('.profile-contact .profile-contact-field:nth-of-type(0) img').replaceWith("Envoyer un MP");
-    $('.profile-contact #field_id-10 img').replaceWith("Fiche de présentation");
-    $('.profile-contact #field_id6 img').replaceWith("Carnet de bord");
-    $('.profile-contact #field_id7 img').replaceWith("Moodboard");
+    $('.profile-contact #field_id6 img').replaceWith("Fiche de présentation");
+    $('.profile-contact #field_id7 img').replaceWith("Carnet de bord");
+    $('.profile-contact #field_id-10 img').replaceWith("Moodboard");
     $('.profile-contact #field_id8 img').replaceWith("Instagram");
     $('.profile-contact #field_id9 img').replaceWith("Playlist");
 

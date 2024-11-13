@@ -4,7 +4,7 @@
     <form action="{S_ACTION}" method="post" name="post" onsubmit="return verify_select();">
 
 	<!-- BEGIN searchresults -->	
-        <div class="topicslist_row">
+        <div class="topicslist_row" data-mess="{searchresults.L_TOPIC_FOLDER_ALT}">
             
             <!-- Image d'un sujet -->
             <div class="topicslist-img"></div>

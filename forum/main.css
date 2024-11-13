@@ -84,6 +84,7 @@
 
     --noNewMessage: url("https://2img.net/images2.imgbox.com/8c/a0/vycddeEv_o.png");
     --newMessage: url("https://2img.net/images2.imgbox.com/0a/74/xpBLY4mU_o.gif");
+    --closedMessage: url("https://zupimages.net/up/24/11/b7pb.gif");
 
     --epique: #848428;
     --tragique: #7F7099;
@@ -120,7 +121,7 @@
     --FAM-pluginBackground: var(--transparence);
     --FAM-chatBackground: var(--principal);
     --FAM-textareaBackground: var(--shadow);
-    --FAM-msgBackground: var(--contrast);
+    --FAM-msgBackground: var(--shadow);
     --FAM-myMsgBackground: var(--shadow);
     --FAM-quoteBackground: var(--shadow);
     --FAM-darkBackground: var(--highContrast);
@@ -2313,12 +2314,18 @@ a.groups.fatidique::after {
     background-size: cover;
 }
 
-.topicslist_row:not(.post_no_new) .topicslist-img {
+.topicslist_row .topicslist-img {
     background-image: var(--newMessage);
 }
 
-.topicslist_row.post_no_new .topicslist-img {
+.topicslist_row.post_no_new .topicslist-img,
+.topicslist_row[data-mess="Pas de nouveaux messages"] .topicslist-img {
     background-image: var(--noNewMessage);
+}
+
+.topicslist_row.folder_locked .topicslist-img,
+.topicslist_row[data-mess="Ce sujet est verrouillé, vous ne pouvez pas éditer les messages ou faire de réponses."] .topicslist-img {
+    background-image: var(--closedMessage);
 }
 
 /* icône de type de message ( exemple : -18 ans, sujet résolu, ... ) */
@@ -2394,6 +2401,10 @@ a.groups.fatidique::after {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.topic-type {
+    opacity: 0;
 }
 
 .topicslist_infos_bottom_hidden:has(.topicslist-pagination:empty):has(.topicslist-description:empty) {
