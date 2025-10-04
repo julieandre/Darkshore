@@ -51,6 +51,11 @@
                 profileMoveTo: '.profile-bottom', //-- le déplacer (dans les profils)
             },
             { 
+                move: ['medailles'], //-- cibler un champ
+                postMoveTo: '.post_irlzone', //-- le déplacer (dans les messages)
+                profileMoveTo: '#profile-badges', //-- le déplacer (dans les profils)
+            },
+            { 
                 move: ['cicatrices', 'anima', 'en-ville-depuis'], //-- cibler un champ
                 postMoveTo: '.post_avatar_hidden_fields', //-- le déplacer (dans les messages)
                 profileMoveTo: '.profile-bottom', //-- le déplacer (dans les profils)
