@@ -3642,6 +3642,7 @@ blockquote cite a {
 
 .profile_infos,
 #profile-irlzone,
+#profile-badges,
 #profile-freezone,
 .profile_field {
     width: 100%;
@@ -3685,6 +3686,8 @@ blockquote cite a {
     display: none;
 }
 
+
+#profile-badges,
 #profile-irlzone {
     padding-top: 10px;
     margin-top: 20px;
@@ -3692,6 +3695,7 @@ blockquote cite a {
 }
 
 #profile-freezone:empty,
+#profile-badges:empty,
 #profile-irlzone:empty {
     border: none;
 }
