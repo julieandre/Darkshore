@@ -93,6 +93,8 @@
                         </div>
 
                         <div id="profile-irlzone"></div>
+
+                        <div id="profile-badges"></div>
                 </div>
             </div>
             <div class="profile-bottom"></div>
